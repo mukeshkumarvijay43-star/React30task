@@ -1,0 +1,5 @@
+function Heading() {
+  return <h3>Welcome to React Learning</h3>;
+}
+
+export default Heading;
