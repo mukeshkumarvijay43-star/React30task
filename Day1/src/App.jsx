@@ -1,75 +1,152 @@
-import Heading from "./components/Task1Heading";
-import Paragraph from "./components/Task2Paragraph";
-import Button from "./components/Task3Button";
-import Task4 from "./components/Task4Components";
-import Student from "./components/Task5Student";
-import Product from "./components/Task6Product";
-import Employee from "./components/Task7Employee";
-import Course from "./components/Task8Course";
-import Navbar from "./components/Task9Navbar";
-import Profile from "./components/Task10Profile";
+import React from "react";
+import "./App.css";
 
+// Task 1: Heading Component
+function Heading() {
+  return <h2>Welcome to React Learning</h2>;
+}
+
+// Task 2: Paragraph Component
+function Paragraph() {
+  return (
+    <p>
+      I am learning React to build modern and interactive web applications.
+      I am learning components, JSX, props, and events step by step.
+    </p>
+  );
+}
+
+// Task 3: Button Component
+function Button() {
+  return <button onClick={() => alert("Button Clicked!")}>Click Here</button>;
+}
+
+// Task 4: Three Components
+function Header() {
+  return <header>My React Website</header>;
+}
+
+function Content() {
+  return <main>This is the content section.</main>;
+}
+
+function Footer() {
+  return <footer>© 2026 My React Website</footer>;
+}
+
+// Task 5: Hello React
+function HelloReact() {
+  return <h2>Hello React!</h2>;
+}
+
+// Task 6: Simple Heading
+function SimpleHeading() {
+  return <h2>My First React Heading</h2>;
+}
+
+// Task 7: Button
+function SimpleButton() {
+  return <button onClick={() => alert("Hello from React Button!")}>Click Me</button>;
+}
+
+// Task 8: Paragraph
+function SimpleParagraph() {
+  return <p>React makes it easy to create reusable user interface components.</p>;
+}
+
+// Task 9: Combine 3 Components
+function Task9() {
+  return (
+    <div className="task9">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
+
+// Task 10: Profile Page
+function Profile() {
+  return (
+    <div className="profile">
+      <h2>Mukesh Kumar</h2>
+      <p><strong>Age:</strong> 23</p>
+      <p><strong>City:</strong> Madurai</p>
+      <p><strong>Course:</strong> Python Full Stack Developer</p>
+      <p>
+        I am learning Python, Django, JavaScript, React and MySQL
+        to become a full stack developer.
+      </p>
+    </div>
+  );
+}
+
+// Main App
 function App() {
   return (
     <div className="container">
 
-      {/* TASK 1 */}
-      <section className="task">
-        <h2>Task 1: Heading Component</h2>
+      <h1>React Learning Tasks</h1>
+
+      {/* Task 1 */}
+      <section>
+        <h3>Task 1: Create a Simple Heading Component</h3>
         <Heading />
       </section>
 
-      {/* TASK 2 */}
-      <section className="task">
-        <h2>Task 2: Paragraph Component</h2>
+      {/* Task 2 */}
+      <section>
+        <h3>Task 2: Create a Paragraph Component</h3>
         <Paragraph />
       </section>
 
-      {/* TASK 3 */}
-      <section className="task">
-        <h2>Task 3: Button Component</h2>
+      {/* Task 3 */}
+      <section>
+        <h3>Task 3: Create a Button Component</h3>
         <Button />
       </section>
 
-      {/* TASK 4 */}
-      <section className="task">
-        <h2>Task 4: Multiple Components</h2>
-        <Task4 />
+      {/* Task 4 */}
+      <section>
+        <h3>Task 4: Combine Multiple Components</h3>
+        <Header />
+        <Content />
+        <Footer />
       </section>
 
-      {/* TASK 5 */}
-      <section className="task">
-        <h2>Task 5: Student Information</h2>
-        <Student />
+      {/* Task 5 */}
+      <section>
+        <h3>Task 5: First Hello React Program</h3>
+        <HelloReact />
       </section>
 
-      {/* TASK 6 */}
-      <section className="task">
-        <h2>Task 6: Product Card</h2>
-        <Product />
+      {/* Task 6 */}
+      <section>
+        <h3>Task 6: Simple Heading Component</h3>
+        <SimpleHeading />
       </section>
 
-      {/* TASK 7 */}
-      <section className="task">
-        <h2>Task 7: Employee Card</h2>
-        <Employee />
+      {/* Task 7 */}
+      <section>
+        <h3>Task 7: Create Button Component</h3>
+        <SimpleButton />
       </section>
 
-      {/* TASK 8 */}
-      <section className="task">
-        <h2>Task 8: Course Card</h2>
-        <Course />
+      {/* Task 8 */}
+      <section>
+        <h3>Task 8: Create Paragraph Component</h3>
+        <SimpleParagraph />
       </section>
 
-      {/* TASK 9 */}
-      <section className="task">
-        <h2>Task 9: Navbar</h2>
-        <Navbar />
+      {/* Task 9 */}
+      <section>
+        <h3>Task 9: Combine 3 Components</h3>
+        <Task9 />
       </section>
 
-      {/* TASK 10 */}
-      <section className="task">
-        <h2>Task 10: Mini Profile Page</h2>
+      {/* Task 10 */}
+      <section>
+        <h3>Task 10: Simple Profile Page</h3>
         <Profile />
       </section>
 
