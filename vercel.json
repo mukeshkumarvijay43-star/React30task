@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm install --prefix Day1",
+  "buildCommand": "npm run build --prefix Day1",
+  "outputDirectory": "Day1/dist"
+}
